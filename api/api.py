@@ -7,7 +7,7 @@ from pipeline_utils import DataCleaner, FlagVariableGenerator, DateTimeExtractor
 
 
 # Load model artifact
-with open("models/xgb_pipeline.pkl", "rb") as f:
+with open("api/models/xgb_pipeline.pkl", "rb") as f:
     artifact = pickle.load(f)
 
 pipeline = artifact["pipeline"]
